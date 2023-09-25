@@ -1,0 +1,193 @@
+[
+    {
+        "brand": "Lamborghini",
+        "model": "Aventador",
+        "price_per_hour": 300.0,
+        "price_per_day": 2400.0,
+        "rating": 4.9,
+        "description": "Experience the power and prestige of the Lamborghini Aventador, a true masterpiece of engineering and design. The Aventador is a symbol of speed, luxury, and performance that will elevate your driving experience to new heights. With its stunning design and roaring V12 engine, it's a work of art in motion. Cruise the streets with unmatched confidence and turn heads wherever you go.\n\nThis supercar comes equipped with top-notch features, including premium leather seats, a cutting-edge infotainment system, advanced safety features, and a powerful sound system. Stay connected with onboard WiFi and enjoy the comfort of all-leather seats. The Aventador is designed for those who demand the best.\n\nExplore the Aventador from different angles with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Premium Leather Seats", "Advanced Safety Features", "Powerful Sound System"],
+        "images": [
+            "https://imgd.aeplcdn.com/1200x900/n/cw/ec/123843/lamborghini-aventador-left-front-three-quarter0.jpeg?isig=0&wm=0",
+            "https://imgd.aeplcdn.com/1200x900/n/cw/ec/123843/lamborghini-aventador-left-front-three-quarter0.jpeg?isig=0&wm=0",
+            "https://imgd.aeplcdn.com/1200x900/n/cw/ec/123843/lamborghini-aventador-left-front-three-quarter0.jpeg?isig=0&wm=0",
+            "https://imgd.aeplcdn.com/1200x900/n/cw/ec/123843/lamborghini-aventador-left-front-three-quarter0.jpeg?isig=0&wm=0"
+            
+        ]
+    },
+    {
+        "brand": "Rolls-Royce",
+        "model": "Phantom",
+        "price_per_hour": 500.0,
+        "price_per_day": 4000.0,
+        "rating": 4.8,
+        "description": "Indulge in luxury and opulence with the Rolls-Royce Phantom, a symbol of elegance and refinement. The Phantom is a statement of prestige and sophistication, offering a truly regal driving experience. Its timeless design and meticulously crafted interior set it apart as a masterpiece of automotive engineering.\n\nThis luxury sedan boasts features such as sumptuous all-leather seating, a state-of-the-art infotainment system, advanced safety technologies, and a bespoke sound system. Stay connected with onboard WiFi and enjoy the smoothest ride of your life. The Phantom is the epitome of automotive excellence.\n\nDiscover the Phantom's beauty with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Premium All-Leather Seats", "Advanced Safety Technologies", "Bespoke Sound System"],
+        "images": [
+            "https://images.barrons.com/im-227394?width=700&height=466",
+            "https://images.barrons.com/im-227394?width=700&height=466",
+            "https://images.barrons.com/im-227394?width=700&height=466",
+            "https://images.barrons.com/im-227394?width=700&height=466"
+            
+        ]
+    },
+    {
+        "brand": "BMW",
+        "model": "7 Series",
+        "price_per_hour": 150.0,
+        "price_per_day": 1200.0,
+        "rating": 4.7,
+        "description": "The BMW 7 Series offers a perfect blend of luxury, performance, and advanced technology. This executive sedan is designed to deliver a premium driving experience, combining elegance with cutting-edge features. Whether you're heading to a business meeting or a night out on the town, the 7 Series will get you there in style and comfort.\n\nInside, you'll find impeccably crafted leather seats, a user-friendly infotainment system, a suite of driver assistance features, and a high-quality audio system. Stay connected with WiFi connectivity and experience the joy of driving a BMW.\n\nGet a closer look at the 7 Series with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Leather Seats", "Driver Assistance Features", "High-Quality Audio System"],
+        "images": [
+            "https://cdn.motor1.com/images/mgl/NGOMej/s1/bmw-i5-edrive40-2023.jpg",
+            "https://cdn.motor1.com/images/mgl/NGOMej/s1/bmw-i5-edrive40-2023.jpg",
+            "https://cdn.motor1.com/images/mgl/NGOMej/s1/bmw-i5-edrive40-2023.jpg",
+            "https://cdn.motor1.com/images/mgl/NGOMej/s1/bmw-i5-edrive40-2023.jpg"
+        ]
+    },
+    {
+        "brand": "Mercedes-Benz",
+        "model": "S-Class",
+        "price_per_hour": 180.0,
+        "price_per_day": 1440.0,
+        "rating": 4.6,
+        "description": "Experience the epitome of comfort and style with the Mercedes-Benz S-Class, a true luxury sedan. The S-Class is renowned for its unmatched blend of opulence, cutting-edge technology, and driving pleasure. It's a status symbol on wheels, perfect for those who demand the best.\n\nStep inside the S-Class, and you'll be enveloped in luxurious leather seating, surrounded by the latest infotainment and safety features. Enjoy a seamless online experience with onboard WiFi and let the S-Class pamper you with its exquisite craftsmanship and innovative features.\n\nExplore the S-Class with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Premium Leather Seating", "Cutting-Edge Technology", "Exquisite Craftsmanship"],
+        "images": [
+            "https://carwow-uk-wp-3.imgix.net/Medium-39588-Mercedes-BenzConceptEQG-scaled-e1675695000855.jpg?auto=format&cs=tinysrgb&fit=crop&h=800&ixlib=rb-1.1.0&q=60&w=1600",
+            "https://carwow-uk-wp-3.imgix.net/Medium-39588-Mercedes-BenzConceptEQG-scaled-e1675695000855.jpg?auto=format&cs=tinysrgb&fit=crop&h=800&ixlib=rb-1.1.0&q=60&w=1600",
+            "https://carwow-uk-wp-3.imgix.net/Medium-39588-Mercedes-BenzConceptEQG-scaled-e1675695000855.jpg?auto=format&cs=tinysrgb&fit=crop&h=800&ixlib=rb-1.1.0&q=60&w=1600",
+            "https://carwow-uk-wp-3.imgix.net/Medium-39588-Mercedes-BenzConceptEQG-scaled-e1675695000855.jpg?auto=format&cs=tinysrgb&fit=crop&h=800&ixlib=rb-1.1.0&q=60&w=1600"
+           
+        ]
+    },
+    {
+        "brand": "Ferrari",
+        "model": "488 GTB",
+        "price_per_hour": 350.0,
+        "price_per_day": 2800.0,
+        "rating": 4.9,
+        "description": "Feel the thrill of driving a Ferrari 488 GTB, a high-performance sports car that's built for excitement. The 488 GTB is a masterpiece of Italian engineering, combining stunning design with blistering speed. It's a supercar that will ignite your passion for driving.\n\nInside the 488 GTB, you'll find sporty yet luxurious leather seats, an advanced infotainment system, precise handling, and a roaring engine that's music to your ears. Stay connected with onboard WiFi and experience the essence of Italian performance.\n\nExperience the 488 GTB with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Sporty Leather Seats", "Precise Handling", "Roaring Engine"],
+        "images": [
+            "https://robbreport.com/wp-content/uploads/2019/09/ferrari-812-gts_04.jpg?w=1000",
+            "https://robbreport.com/wp-content/uploads/2019/09/ferrari-812-gts_04.jpg?w=1000",
+            "https://robbreport.com/wp-content/uploads/2019/09/ferrari-812-gts_04.jpg?w=1000",
+            "https://robbreport.com/wp-content/uploads/2019/09/ferrari-812-gts_04.jpg?w=1000"
+            
+        ]
+    },
+    {
+        "brand": "Bentley",
+        "model": "Continental GT",
+        "price_per_hour": 250.0,
+        "price_per_day": 2000.0,
+        "rating": 4.8,
+        "description": "Cruise in style with the Bentley Continental GT, a grand tourer that exudes luxury and sophistication. The Continental GT is a masterpiece of British automotive craftsmanship, offering a sublime driving experience that combines power and elegance.\n\nStep inside the Continental GT's lavish cabin with premium leather seats, a state-of-the-art infotainment system, exquisite wood veneers, and a powerful sound system. Stay connected with onboard WiFi and enjoy the refined comfort of a Bentley.\n\nExperience the Continental GT with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Premium Leather Seats", "Exquisite Wood Veneers", "Powerful Sound System"],
+        "images": [
+            "https://hips.hearstapps.com/hmg-prod/images/2024-bentley-continental-gt-convertible-101-644bd404dcb7e.jpg?crop=0.637xw:0.716xh;0.264xw,0.225xh&resize=640:*",
+            "https://hips.hearstapps.com/hmg-prod/images/2024-bentley-continental-gt-convertible-101-644bd404dcb7e.jpg?crop=0.637xw:0.716xh;0.264xw,0.225xh&resize=640:*",
+            "https://hips.hearstapps.com/hmg-prod/images/2024-bentley-continental-gt-convertible-101-644bd404dcb7e.jpg?crop=0.637xw:0.716xh;0.264xw,0.225xh&resize=640:*",
+            "https://hips.hearstapps.com/hmg-prod/images/2024-bentley-continental-gt-convertible-101-644bd404dcb7e.jpg?crop=0.637xw:0.716xh;0.264xw,0.225xh&resize=640:*"
+            
+        ]
+    },
+    {
+        "brand": "Aston Martin",
+        "model": "DB11",
+        "price_per_hour": 280.0,
+        "price_per_day": 2240.0,
+        "rating": 4.7,
+        "description": "Experience the elegance and power of the Aston Martin DB11, a British icon of luxury and performance. The DB11 is a stunning grand tourer that combines timeless design with exhilarating performance.\n\nInside the DB11, you'll find handcrafted leather seats, a sophisticated infotainment system, precise handling, and a heart-pounding engine. Stay connected with onboard WiFi and immerse yourself in the quintessential British driving experience.\n\nExplore the DB11 with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Handcrafted Leather Seats", "Precise Handling", "Heart-Pounding Engine"],
+        "images": [
+            "https://cdn.carbuzz.com/gallery-images/1600/1135000/300/1135317.jpg",
+            "https://cdn.carbuzz.com/gallery-images/1600/1135000/300/1135317.jpg",
+            "https://cdn.carbuzz.com/gallery-images/1600/1135000/300/1135317.jpg",
+            "https://cdn.carbuzz.com/gallery-images/1600/1135000/300/1135317.jpg"
+            
+        ]
+    },
+    {
+        "brand": "Maserati",
+        "model": "Quattroporte",
+        "price_per_hour": 220.0,
+        "price_per_day": 1760.0,
+        "rating": 4.6,
+        "description": "The Maserati Quattroporte offers a blend of Italian style, luxury, and performance in a stunning package. The Quattroporte is a true masterpiece of Italian design, and it delivers an exhilarating driving experience.\n\nStep into the Quattroporte's cabin with sumptuous leather seats, a high-tech infotainment system, precise handling, and a distinctive engine note that's music to your ears. Stay connected with onboard WiFi and experience Italian automotive artistry.\n\nDiscover the Quattroporte with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Sumptuous Leather Seats", "Precise Handling", "Distinctive Engine Note"],
+        "images": [
+            "https://www.topgear.com/sites/default/files/2023/05/1-Maserati-Grecale.jpg",
+            "https://www.topgear.com/sites/default/files/2023/05/1-Maserati-Grecale.jpg",
+            "https://www.topgear.com/sites/default/files/2023/05/1-Maserati-Grecale.jpg",
+            "https://www.topgear.com/sites/default/files/2023/05/1-Maserati-Grecale.jpg"
+            
+        ]
+    },
+    {
+        "brand": "Porsche",
+        "model": "911 Turbo",
+        "price_per_hour": 280.0,
+        "price_per_day": 2240.0,
+        "rating": 4.8,
+        "description": "Experience the iconic Porsche 911 Turbo, a high-performance sports car that's a joy to drive. The 911 Turbo is a legend in the world of sports cars, known for its precision engineering and exhilarating performance.\n\nInside the 911 Turbo, you'll find sporty leather seats, a state-of-the-art infotainment system, razor-sharp handling, and a turbocharged engine that delivers breathtaking speed. Stay connected with onboard WiFi and embrace the legacy of Porsche performance.\n\nGet behind the wheel of the 911 Turbo with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Sporty Leather Seats", "Razor-Sharp Handling", "Turbocharged Engine"],
+        "images": [
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg"
+            
+        ]
+    },
+    {
+        "brand": "Lexus",
+        "model": "LC 500",
+        "price_per_hour": 180.0,
+        "price_per_day": 1440.0,
+        "rating": 4.7,
+        "description": "The Lexus LC 500 offers a blend of luxury and performance, with striking design and cutting-edge technology. The LC 500 is a statement of modern automotive design, and it promises an exhilarating driving experience.\n\nInside the LC 500, you'll discover premium leather seats, a high-tech infotainment system, agile handling, and a powerful engine. Stay connected with onboard WiFi and enjoy the perfect balance of style and performance.\n\nExplore the LC 500 with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Premium Leather Seats", "Agile Handling", "Powerful Engine"],
+        "images": [
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg"
+            
+        ]
+    },
+    {
+        "brand": "Bugatti",
+        "model": "Chiron",
+        "price_per_hour": 1000.0,
+        "price_per_day": 8000.0,
+        "rating": 5.0,
+        "description": "Experience unmatched speed and engineering with the Bugatti Chiron, a hypercar in a league of its own. The Chiron is the pinnacle of automotive engineering, setting records and turning heads wherever it goes.\n\nStep inside the Chiron's cockpit with luxurious leather seats, a state-of-the-art infotainment system, mind-boggling speed, and a quad-turbocharged W16 engine that produces over 1,500 horsepower. Stay connected with onboard WiFi and experience the future of hypercar performance.\n\nWitness the Chiron's greatness with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Luxurious Leather Seats", "Quad-Turbocharged W16 Engine", "Mind-Boggling Speed"],
+        "images": [
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg"
+            
+        ]
+    },
+    {
+        "brand": "McLaren",
+        "model": "720S",
+        "price_per_hour": 320.0,
+        "price_per_day": 2560.0,
+        "rating": 4.9,
+        "description": "Feel the thrill of driving the McLaren 720S, a supercar that combines breathtaking performance with style. The 720S is a masterpiece of aerodynamic design and raw power, designed to deliver an adrenaline-pumping driving experience.\n\nInside the 720S, you'll find racing-inspired leather seats, a high-performance infotainment system, precise handling, and a twin-turbo V8 engine that's simply exhilarating. Stay connected with onboard WiFi and embrace the world of high-performance driving.\n\nExperience the 720S with these images: [Image1](ImageURL1), [Image2](ImageURL2), [Image3](ImageURL3).",
+        "features": ["WiFi", "Racing-Inspired Leather Seats", "Precise Handling", "Twin-Turbo V8 Engine"],
+        "images": [
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg",
+            "https://cdn.motor1.com/images/mgl/A9e9O/s3/2022-porsche-panamera-platinum-edition.jpg"
+            
+        ]
+    }
+]
