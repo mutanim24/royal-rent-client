@@ -82,7 +82,7 @@ const Login = () => {
                             >
                                 Your email
                             </label>
-                            <small className="absolute flex justify-between w-full px-4 py-1 text-xs transition text-slate-700 peer-invalid:text-pink-500">
+                            <small className="absolute flex justify-between w-full px-4 py-1 text-xs transition text-slate-400 peer-invalid:text-pink-500">
                                 <span>Type your email address</span>
                             </small>
                         </div>
@@ -125,9 +125,9 @@ const Login = () => {
                 <div className="flex justify-end p-6 -mt-5">
                     <button
                         type="submit"
-                        className="btn border-0 inline-flex items-center justify-center w-full h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-[#ff6e13] opacity-75 disabled:cursor-not-allowed disabled:borde"
+                        className="btn border-0 inline-flex items-center justify-center w-full h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-[#ff6e13] opacity-75 disabled:cursor-not-allowed disabled:borde hover:text-black"
                     >
-                        <span>Login</span>
+                        Login
                     </button>
                 </div>
                 <div className="-mt-1 text-center text-md transition text-slate-400 peer-invalid:text-pink-500">

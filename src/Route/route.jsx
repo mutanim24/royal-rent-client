@@ -7,6 +7,7 @@ import CarPage from "../pages/CarPage/CarPage";
 import ConatctUs from "../pages/Contact Us/ContactUs";
 import Blog from "../pages/Blog/Blog";
 import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
 
 
 export const router = createBrowserRouter([
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
             {
                 path: '/contact-us',
                 element: <ConatctUs></ConatctUs>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             },
             {
                 path: '/login',
