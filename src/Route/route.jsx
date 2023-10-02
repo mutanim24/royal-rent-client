@@ -4,6 +4,8 @@ import {
 import Main from "../layout/Main";
 import HomePage from "../pages/Home/HomePage/HomePage";
 import CarPage from "../pages/CarPage/CarPage";
+import Pricing from "../pages/Pricing/Pricing";
+import AboutUs from "../pages/AboutUs/AboutUs";
 
 
 export const router = createBrowserRouter([
@@ -18,7 +20,15 @@ export const router = createBrowserRouter([
             {
                 path: '/car/:id',
                 element: <CarPage></CarPage>,
-                loader: ({params}) => fetch(`http://localhost:3000/car/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:3000/car/${params.id}`)
+            },
+            {
+                path: "/aboutUs",
+                element: <AboutUs></AboutUs>
+            },
+            {
+                path: "/pricing",
+                element: <Pricing></Pricing>
             }
         ]
     },
