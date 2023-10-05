@@ -5,9 +5,12 @@ import quality2 from '../../../assets/quality 2.jpg';
 
 const Safety = () => {
     return (
-        <div className='grid grid-cols-2 gap-10 p-20'>
+        <div className='grid grid-cols-2 gap-10 p-20 items-center'>
             <div>
-                <SectionTitle></SectionTitle>
+                <SectionTitle
+                    title="We Care Of Your Safety And Convenience"
+                    subtitle="PREMIUM DRIVERS"
+                ></SectionTitle>
                 <p>Facilisi cras fermentum odio eu feugiat. In fermentum et sollicitudin ac ori accumsan sit amet nulla facilisi morbi tempus iaculis urna id. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae dipiscing.</p>
                 <button className='btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>Book Now</button>
             </div>

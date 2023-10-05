@@ -5,7 +5,10 @@ import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTit
 const Quality = () => {
     return (
         <div className='p-20'>
-            <SectionTitle></SectionTitle>
+            <SectionTitle
+                title="Ride To Destinations With Maximum Comfort"
+                subtitle="FINEST TRANSPORT"
+            ></SectionTitle>
             <div className='flex gap-12 items-center'>
                 <div className='w-3/12'>
                     <img className='h-96 mx-auto' src={symbol} alt="" />
@@ -17,17 +20,17 @@ const Quality = () => {
                             Tortor condimentum lacinia quis vel eros donec odio. Feugiat fermentum in posuere urna. Faucibus turpis in eun mi bibendum.</p>
                     </div>
                     <div>
-                        <h3 className='text-2xl font-bold text-[#d28d0d] mb-4'>No Delays</h3>
+                        <h3 className='text-2xl font-bold text-[#d28d0d] mb-4'>High Quality</h3>
                         <p>No Delays
                             Tortor condimentum lacinia quis vel eros donec odio. Feugiat fermentum in posuere urna. Faucibus turpis in eun mi bibendum.</p>
                     </div>
                     <div>
-                        <h3 className='text-2xl font-bold text-[#d28d0d] mb-4'>No Delays</h3>
+                        <h3 className='text-2xl font-bold text-[#d28d0d] mb-4'>Premium Support</h3>
                         <p>No Delays
                             Tortor condimentum lacinia quis vel eros donec odio. Feugiat fermentum in posuere urna. Faucibus turpis in eun mi bibendum.</p>
                     </div>
                     <div>
-                        <h3 className='text-2xl font-bold text-[#d28d0d] mb-4'>No Delays</h3>
+                        <h3 className='text-2xl font-bold text-[#d28d0d] mb-4'>A Diverse Selection</h3>
                         <p>No Delays
                             Tortor condimentum lacinia quis vel eros donec odio. Feugiat fermentum in posuere urna. Faucibus turpis in eun mi bibendum.</p>
                     </div>
