@@ -10,6 +10,7 @@ import Blog from "../pages/Blog/Blog";
 import ConatctUs from "../pages/Contact Us/ContactUs";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import ServicePage from "../pages/Service/ServicePage/ServicePage";
 
 
 export const router = createBrowserRouter([
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
             {
                 path: "/pricing",
                 element: <Pricing></Pricing>
+            },
+            {
+                path: 'services',
+                element: <ServicePage></ServicePage>
             }
         ]
     },

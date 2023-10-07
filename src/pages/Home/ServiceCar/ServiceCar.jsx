@@ -14,7 +14,7 @@ const ServiceCar = () => {
     return (
         <div className="grid grid-cols-3 gap-5 p-20">
             {
-                cars.map(car => <CardForCar
+                cars.slice(0, 6).map(car => <CardForCar
                     key={car._id}
                     car={car}
                 ></CardForCar>)
