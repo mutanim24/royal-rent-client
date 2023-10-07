@@ -5,8 +5,8 @@ const FrequentlyAskedQuestion = () => {
     return (
         <div className='w-11/12 mx-auto'>
             <SectionTitle
-                heading={"Frequently Asked Questions"}
-                subheading={"LIST OF ANSWER"}
+                title={"Frequently Asked Questions"}
+                subtitle={"LIST OF ANSWER"}
             ></SectionTitle>
             <section className="w-full divide-y divide-slate-200 rounded bg-white shadow-md shadow-slate-200">
                 <details className="group p-4" open>

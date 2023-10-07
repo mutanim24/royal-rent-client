@@ -7,8 +7,8 @@ const EveryNeed = () => {
         <div className='flex flex-col-reverse sm:flex-row justify-between gap-10 w-full mt-20'>
             <div className='w-full sm:w-1/2 p-10'>
                 <SectionTitle
-                    heading={"For Your Every Need"}
-                    subheading={"ONLY THE BEST"}
+                    title={"For Your Every Need"}
+                    subtitle={"ONLY THE BEST"}
                 ></SectionTitle>
                 <p>Praesent elementum facilisis leo vel fringilla est. Vestibulum lectus a urise ultrices eros in cursus.</p>
                 <button className='btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>View More</button>

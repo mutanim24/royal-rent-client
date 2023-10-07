@@ -14,8 +14,8 @@ const PricingCard = () => {
     return (
         <div className='w-11/12 my-10 mx-auto '>
             <SectionTitle
-                heading={"Luxury Limousine for Maximum Satisfaction. Enjoy."}
-                subheading={"EXCLUSIVE CARS"}
+                title={"Luxury Limousine for Maximum Satisfaction. Enjoy."}
+                subtitle={"EXCLUSIVE CARS"}
             ></SectionTitle>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10'>
                 <div className="card w-90 border shadow-xl">
