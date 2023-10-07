@@ -20,6 +20,8 @@ const Navbar = () => {
         <li><Link>About</Link></li>
         <li><Link to='/blog'>Blog</Link></li>
         <li><Link to='/contact-us'>Contact</Link></li>
+        <li><Link to='/aboutUs'>About</Link></li>
+        <li><Link to='/pricing'>Pricing</Link></li>
     </>
     return (
         <div className="navbar text-[#d28d0d] border-b px-20 bg-[#1f2937]">
