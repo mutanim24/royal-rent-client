@@ -1,10 +1,27 @@
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProviders";
+import { useContext } from "react";
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+
+            })
+            .catch((error) => {
+                toast.error(error.message);
+            });
+    };
     const menu = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link>Vehicles</Link></li>
         <li><Link>About</Link></li>
+        <li><Link to='/blog'>Blog</Link></li>
+        <li><Link to='/contact-us'>Contact</Link></li>
+        <li><Link to='/aboutUs'>About</Link></li>
+        <li><Link to='/pricing'>Pricing</Link></li>
     </>
     return (
         <div className="navbar text-[#d28d0d] border-b px-20 bg-[#1f2937]">
@@ -25,7 +42,34 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-[#d28d0d] text-white hover:text-[#d28d0d]">Button</a>
+                {/* <Link to='/login'>
+                    <a className="btn bg-[#d28d0d] text-white hover:text-[#d28d0d]">Login</a>
+                </Link> */}
+
+                <div>
+                    {user ? (
+                        <div className="flex items-center justify-center gap-6">
+                            <img
+                                title={user.displayName}
+                                className="w-12 h-12 rounded-full"
+                                src={user.photoURL}
+                                alt=""
+                            />
+                            <button
+                                onClick={handleLogOut}
+                                className="btn border-0 text-white bg-[#ff6e13] opacity-75 px-4 py-2 font-bold rounded-md flex items-center gap-1"
+                            >
+                                Logout
+                            </button>
+                        </div>
+                    ) : (
+                        <Link to="/login">
+                            <button className="btn border-0 text-white bg-[#ff6e13] opacity-75 px-4 py-2 font-bold rounded-md flex items-center gap-1">
+                                Login
+                            </button>
+                        </Link>
+                    )}
+                </div>
             </div>
         </div>
     );

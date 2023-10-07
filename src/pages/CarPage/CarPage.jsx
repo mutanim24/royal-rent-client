@@ -28,7 +28,7 @@ const CarPage = () => {
                 </div>
                 <h1 className="text-2xl">from <span className="text-4xl font-bold text-[#d28d0d]">{price_per_hour}/h</span></h1>
                 <p>{description}</p>
-                <button className='mt-20 btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>Book Now</button>
+                <button className='mt-20 btn btn-outline outline-[#d28d0d] text-[#d28d0d]  uppercase'>Book Now</button>
 
 
             </div>
