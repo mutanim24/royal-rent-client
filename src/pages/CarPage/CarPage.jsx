@@ -10,16 +10,30 @@ const CarPage = () => {
     // console.log(carDetails)
 
 
-    const handleSubmit = (event)=> {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        const form  = event.target;
+        const form = event.target;
         const comment = form.comment.value;
         const name = form.name.value;
         const email = form.email.value;
         const id = _id;
-
-
         // console.log(comment, name, email, id)
+    }
+
+    const handleBook = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const phone = form.phone.value;
+        const tripType = form.tripType.value;
+        const brand = form.brand.value;
+        const number = form.number.value;
+        const date = form.date.value;
+        const time = form.time.value;
+        const special = form.special.value;
+        console.log(name,email,phone,tripType,brand,number,date,time,special)
+        
     }
     return (
         <div>
@@ -41,9 +55,59 @@ const CarPage = () => {
                     </div>
                     <h1 className="text-2xl">from <span className="text-4xl font-bold text-[#d28d0d]">{price_per_hour}/h</span></h1>
                     <p>{description}</p>
-                    <button className='mt-20 btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>Book Now</button>
 
-
+                    {/* Modal */}
+                    <label htmlFor="my_modal_7" className="btn btn-outline outline-[#d28d0d] text-[#d28d0d] uppercase">Book Now</label>
+                    <input type="checkbox" id="my_modal_7" className="modal-toggle" />
+                    <div className="modal">
+                        <div className="modal-box w-9/12 max-w-5xl bg-[#1f2937] text-white">
+                            <form action="" onSubmit={handleBook}>
+                                <div className="flex mx-auto gap-4">
+                                    <div className="form-control w-1/2">
+                                        <input type="text" required placeholder="Name" name="name" className="input input-bordered bg-transparent border-b-yellow-600" />
+                                    </div>
+                                    <div className="form-control w-1/2">
+                                        <input type="email" required placeholder="Email" name="email" className="input input-bordered bg-transparent border-b-yellow-600" />
+                                    </div>
+                                </div>
+                                <div className="flex mx-auto mt-4 gap-4">
+                                    <div className="form-control w-1/2">
+                                        <input type="tel" required placeholder="Phone" name="phone" className="input input-bordered bg-transparent border-b-yellow-600" />
+                                    </div>
+                                    <div className="form-control w-1/2">
+                                        <select name="tripType" className="select bg-transparent border-b-yellow-600 text-black">
+                                            <option disabled >Trip Type</option>
+                                            <option>Default</option>
+                                            <option>Per Hour</option>
+                                            <option>Per Day</option>
+                                            <option>One-time</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className="flex mx-auto mt-4 gap-4">
+                                    <div className="form-control w-1/2">
+                                        <input type="" name="brand" required defaultValue={brand} className="input input-bordered bg-transparent border-b-yellow-600" />
+                                    </div>
+                                    <div className="form-control w-1/2">
+                                        <input type="number" required placeholder="No. Of passengers" name="number" className="input input-bordered bg-transparent border-b-yellow-600" />
+                                    </div>
+                                </div>
+                                <div className="flex mx-auto mt-4 gap-4">
+                                    <div className="form-control w-1/2">
+                                        <input type="date" required placeholder="Select Date" name="date" className="input input-bordered bg-transparent border-b-yellow-600" />
+                                    </div>
+                                    <div className="form-control w-1/2">
+                                        <input type="time" required placeholder="Select Time" name="time" className="input input-bordered bg-transparent border-b-yellow-600" />
+                                    </div>
+                                </div>
+                                <div className="form-control mt-5">
+                                    <textarea placeholder="Special Request" name="special" className="textarea textarea-bordered bg-transparent border-b-yellow-600"></textarea>
+                                </div>
+                                <input className="mt-5 btn btn-outline outline-[#d28d0d] text-[#d28d0d] uppercase" type="submit" value="Book Now" />
+                            </form>
+                        </div>
+                        <label className="modal-backdrop" htmlFor="my_modal_7">Close</label>
+                    </div>
                 </div>
             </div>
             <div>
@@ -63,7 +127,7 @@ const CarPage = () => {
                             className="input input-bordered w-full"
                             // required
                             name="name"
-                            
+
                         />
 
                         <input
@@ -72,7 +136,7 @@ const CarPage = () => {
                             className="input input-bordered w-full"
                             // required
                             name="email"
-                           
+
                         />
                     </div>
                     <br />

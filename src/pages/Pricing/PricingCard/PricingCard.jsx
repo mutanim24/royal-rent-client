@@ -8,6 +8,8 @@ import img6 from "../../../assets/client-03-hover.png"
 import img7 from "../../../assets/client-04hover.png"
 import img8 from "../../../assets/client-05-hover.png"
 import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import { BsCheck } from 'react-icons/bs';
+
 
 
 const PricingCard = () => {
@@ -28,10 +30,12 @@ const PricingCard = () => {
                             <h5 className='text-[#d28d0d]'> <span className='text-4xl font-semibold'>$140</span>/per day</h5>
                         </div>
                         <div className='mt-5 text-start space-y-2'>
-                            <p><i className="fas fa-star"></i> Leo urna molestie at elem</p>
-                            <p><i className="fas fa-star"></i> Quisque non tellu si</p>
-                            <p><i className="fas fa-star"></i> Pretium lectus quam id li</p>
-                            <p><i className="fas fa-star"></i> Lorem ipsum 24/7</p>
+                            <ul className='text-gray-400 space-y-2'>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Leo urna molestie at elem</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Quisque non tellu si</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Pretium lectus quam id li</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Lorem ipsum 24/7</li>
+                            </ul>
                         </div>
                         <button className='btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>Book Now</button>
                     </div>
@@ -46,10 +50,12 @@ const PricingCard = () => {
                             <h5 className='text-[#d28d0d]'> <span className='text-4xl font-semibold'>$150</span>/per day</h5>
                         </div>
                         <div className='mt-5 text-start space-y-2'>
-                            <p><i className="fas fa-star"></i> Leo urna molestie at elem</p>
-                            <p><i className="fas fa-star"></i> Quisque non tellu si</p>
-                            <p><i className="fas fa-star"></i> Pretium lectus quam id li</p>
-                            <p><i className="fas fa-star"></i> Lorem ipsum 24/7</p>
+                            <ul className='text-gray-400 space-y-2'>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Leo urna molestie at elem</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Quisque non tellu si</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Pretium lectus quam id li</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Lorem ipsum 24/7</li>
+                            </ul>
                         </div>
                         <button className='btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>Book Now</button>
                     </div>
@@ -64,10 +70,12 @@ const PricingCard = () => {
                             <h5 className='text-[#d28d0d]'> <span className='text-4xl font-semibold'>$190</span>/per day</h5>
                         </div>
                         <div className='mt-5 text-start space-y-2'>
-                            <p><i className="fas fa-star"></i> Leo urna molestie at elem</p>
-                            <p><i className="fas fa-star"></i> Quisque non tellu si</p>
-                            <p><i className="fas fa-star"></i> Pretium lectus quam id li</p>
-                            <p><i className="fas fa-star"></i> Lorem ipsum 24/7</p>
+                            <ul className='text-gray-400 space-y-2'>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Leo urna molestie at elem</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Quisque non tellu si</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Pretium lectus quam id li</li>
+                                <li className='flex gap-2 items-center'><BsCheck></BsCheck>Lorem ipsum 24/7</li>
+                            </ul>
                         </div>
                         <button className='btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>Book Now</button>
                     </div>
