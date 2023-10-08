@@ -1,6 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
-import ReactStars from 'react-rating-star-with-type';
+// import ReactStars from 'react-rating-star-with-type';
+import ReactStars from "react-rating-stars-component";
+
 // import { useForm } from 'react-hook-form';
 
 
@@ -10,16 +12,24 @@ const CarPage = () => {
     // console.log(carDetails)
 
 
-    const handleSubmit = (event)=> {
+    const [givenRating, setGivenRating] = useState(4); // Initial rating value
+
+    const ratingChanged = (newRating) => {
+        setGivenRating(newRating); // Updates the rating state variable with the selected value
+    };
+
+    const handleSubmit = (event) => {
         event.preventDefault();
-        const form  = event.target;
+        const form = event.target;
         const comment = form.comment.value;
         const name = form.name.value;
         const email = form.email.value;
+        const city = form.city.value;
         const id = _id;
 
 
-        // console.log(comment, name, email, id)
+        
+        console.log(comment, name, email, city, givenRating, id)
     }
     return (
         <div>
@@ -34,7 +44,9 @@ const CarPage = () => {
                         <ReactStars
 
                             value={rating}
-                            edit={true}
+                            edit={false}
+                            size={24}
+                            activeColor="#d28d0d"
                             activeColors={["red", "orange", "#FFCE00", "#9177FF", "#8568FC",]}
                         />
                         <h2>{rating}</h2>
@@ -49,34 +61,77 @@ const CarPage = () => {
             <div>
                 <h2 className="text-3xl font-bold text-[#d28d0d] mb-6">Leave your comment</h2>
                 <form onSubmit={handleSubmit} className="bordered w-6/12 space-y-5">
+                    <div className="flex items-center gap-3">
+                        {/* <label htmlFor="rating" className="text-[#d28d0d]">Rate:</label> */}
+                        {/* <input
+                            id="rating"
+                            type="number"
+                            placeholder="Rating (1-5)"
+                            className="input input-bordered w-16"
+                            min="1"
+                            max="5"
+                            value={rating}
+                            onChange={handleRatingChange}
+                            required
+                        /> */}
+                        <ReactStars
+                            count={5}
+                            size={44}
+                            activeColor="#d28d0d"
+                            value={4}
+                            edit={true}
+                            onChange={ratingChanged}
+                            required
+                        />
+                    </div>
+
                     <textarea
                         className="textarea w-full textarea-bordered"
                         placeholder="Your Comment*"
-                        // required
                         name="comment"
+                        required
                     ></textarea>
-                    <br />
+                    {/* <br /> */}
                     <div className="flex gap-3">
                         <input
                             type="text"
                             placeholder="Name*"
                             className="input input-bordered w-full"
-                            // required
                             name="name"
-                            
+                            required
                         />
-
                         <input
                             type="Email"
                             placeholder="Email*"
                             className="input input-bordered w-full"
-                            // required
                             name="email"
-                           
+                            required
                         />
                     </div>
+                    {/* <br /> */}
+                    <div className="relative">
+                        <select
+                            className="input input-bordered w-full"
+                            // onChange={handleCityChange}
+                            // value={city}
+                            name="city"
+                            required
+                        >
+                            <option value="" disabled>Select your city*</option>
+                            <option value="Dallas, New York">Dallas, New York</option>
+                            <option value="Calfornia, New York">Calfornia, New York</option>
+                            <option value="Las Vefas, New York">Las Vefas, New York</option>
+                            <option value="Cikago, New York">Cikago, New York</option>
+                            <option value="Lose Angels, New York">Lose Angels, New York</option>
+                            <option value="Austin, New York">Austin, New York</option>
+                        </select>
+                    </div>
                     <br />
-                    <input className="btn btn-outline outline-[#d28d0d] text-[#d28d0d] uppercase" type="submit" value="Post Comment" />
+                    <input
+                        className="btn btn-outline outline-[#d28d0d] text-[#d28d0d] uppercase"
+                        type="submit"
+                        value="Post Comment"
+                    />
                 </form>
             </div>
         </div>
