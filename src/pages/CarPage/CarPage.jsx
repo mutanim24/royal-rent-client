@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
 import ReactStars from 'react-rating-star-with-type';
+import Swal from "sweetalert2";
 // import { useForm } from 'react-hook-form';
 
 
@@ -32,8 +33,27 @@ const CarPage = () => {
         const date = form.date.value;
         const time = form.time.value;
         const special = form.special.value;
-        console.log(name,email,phone,tripType,brand,number,date,time,special)
-        
+        const booking = { bookingId: _id, name, email, phone, tripType, brand, number, date, time, special };
+        console.log(booking);
+        fetch("http://localhost:3000/booking", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(booking)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.acknowledged) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Toy Added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+            })
     }
     return (
         <div>

@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { useContext } from "react";
+import "./Navbar.css"
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -14,16 +15,45 @@ const Navbar = () => {
                 toast.error(error.message);
             });
     };
-    const menu = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/services'>Service</Link></li>
-        <li><Link>Vehicles</Link></li>
-        <li><Link>About</Link></li>
-        <li><Link to='/blog'>Blog</Link></li>
-        <li><Link to='/contact-us'>Contact</Link></li>
-        <li><Link to='/aboutUs'>About</Link></li>
-        <li><Link to='/pricing'>Pricing</Link></li>
-    </>
+
+    const menu =
+        <>
+            <li>
+                <NavLink to="/" activeClassName="active-link" className="nav-link">
+                    Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/services" activeClassName="active-link" className="nav-link">
+                    Service
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/vehicle" activeClassName="active-link" className="nav-link">
+                    Vehicles
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/blog" activeClassName="active-link" className="nav-link">
+                    Blog
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/contact-us" activeClassName="active-link" className="nav-link">
+                    Contact
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/aboutUs" activeClassName="active-link" className="nav-link">
+                    About Us
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/pricing" activeClassName="active-link"   className="nav-link">
+                    Pricing
+                </NavLink>
+            </li>
+        </>
     return (
         <div className="navbar text-[#d28d0d] border-b px-20 bg-[#1f2937]">
             <div className="navbar-start">
