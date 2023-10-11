@@ -48,13 +48,14 @@ const CarPage = () => {
                 if (data.acknowledged) {
                     Swal.fire({
                         title: 'Success!',
-                        text: 'Toy Added Successfully',
+                        text: 'Booking Successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
                 }
             })
     }
+    
     return (
         <div>
             <div className="p-20 grid grid-cols-2 gap-10 items-center">
