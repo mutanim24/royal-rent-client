@@ -1,0 +1,21 @@
+.legend-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.legend-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #d28d0d;
+}
+
+.legend-subtitle {
+    font-size: 25px;
+}
