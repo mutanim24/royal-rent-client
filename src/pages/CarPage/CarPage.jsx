@@ -27,8 +27,19 @@ const CarPage = () => {
         const city = form.city.value;
         const id = _id;
 
+        const allComment = { id, name, email, comment, city, givenRating }
 
-        
+        fetch("http://localhost:3000/comment", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(allComment)
+        }).then(res => res.json())
+            .then(data => console.log(data))
+
+
+
         console.log(comment, name, email, city, givenRating, id)
     }
     return (
