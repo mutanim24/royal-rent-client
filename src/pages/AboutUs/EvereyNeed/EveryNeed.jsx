@@ -4,8 +4,8 @@ import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const EveryNeed = () => {
     return (
-        <div className='flex flex-col-reverse sm:flex-row justify-between gap-10 w-full mt-20'>
-            <div className='w-full sm:w-1/2 p-10'>
+        <div className='flex flex-col-reverse sm:flex-row justify-between gap-10 w-full p-5 md:p-20'>
+            <div className='w-full sm:w-1/2 p-5 md:p-10'>
                 <SectionTitle
                     title={"For Your Every Need"}
                     subtitle={"ONLY THE BEST"}

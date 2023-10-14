@@ -44,8 +44,6 @@ const CarPage = () => {
         }).then(res => res.json())
             .then(data => console.log(data))
 
-
-
         // console.log(comment, name, email, city, givenRating, id)
     }
     // for booking
@@ -121,7 +119,7 @@ const CarPage = () => {
                             features.map((feature, index) => <p key={index} className="border-black border rounded-full text-center p-1 text-sm">{feature}</p>)
                         }
                     </div>
-
+                    
                     {/* Modal */}
                     <label htmlFor="my_modal_7" className="btn btn-outline outline-[#d28d0d] text-[#d28d0d] uppercase">Book Now</label>
                     <input type="checkbox" id="my_modal_7" className="modal-toggle" />

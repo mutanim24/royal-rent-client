@@ -4,11 +4,11 @@ import img from "../../../assets/inner-ab-img-2.jpg"
 
 const Comfort = () => {
     return (
-        <div className='flex flex-col sm:flex-row gap-10 w-full my-20'>
+        <div className='flex flex-col sm:flex-row gap-10 w-full p-5 md:p-20'>
             <div className='w-full sm:w-1/2'>
                 <img src={img} alt="" className='w-full' />
             </div>
-            <div className='w-full sm:w-1/2 p-10'>
+            <div className='w-full sm:w-1/2 p-5 md:p-10'>
                 <SectionTitle
                     title={"We Care About Your Comfort And Safety"}
                     subtitle={"BEST DRIVERS"}

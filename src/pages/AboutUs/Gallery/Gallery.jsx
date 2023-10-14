@@ -5,7 +5,7 @@ import img3 from "../../../assets/inner-faq-img-3.jpg"
 
 const Gallery = () => {
     return (
-        <div className="flex gap-6 my-10 w-11/12 mx-auto">
+        <div className="flex gap-6 p-5 md:p-20">
             <div className="w-1/2">
                 <img src={img1} alt="Image 1" className="w-full h-auto" />
             </div>

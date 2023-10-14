@@ -3,7 +3,7 @@ import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const FrequentlyAskedQuestion = () => {
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className='p-5 md:p-20'>
             <SectionTitle
                 title={"Frequently Asked Questions"}
                 subtitle={"LIST OF ANSWER"}
