@@ -12,7 +12,7 @@ const ServiceCar = () => {
 
     // console.log(cars)
     return (
-        <div className="grid grid-cols-3 gap-5 p-20">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-5 md:p-20 p-10">
             {
                 cars.slice(0, 6).map(car => <CardForCar
                     key={car._id}
