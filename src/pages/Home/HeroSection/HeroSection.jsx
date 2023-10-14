@@ -1,64 +1,32 @@
-// import { useEffect } from "react";
-// import { useState } from "react";
-import slide1 from '../../../assets/hs1.jpg'
-import slide2 from '../../../assets/hs2.jpg'
-import slide3 from '../../../assets/hs3.jpg'
 
+import "./Hero.css"
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-// import './style.css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-
-import './style.css';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-export default function HeroSection() {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
+import img1 from "../../../assets/h1-rev-img-1b.jpg"
+import img2 from "../../../assets/h1-rev-img-2b.jpg"
+const HeroSection = () => {
   return (
-    <>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
+    <div>
+      <Carousel>
+        <div>
+          <img src={img1} alt="Image 1" />
+          <div className="legend-container">
+            <p className="legend-title">Explore the Open Road</p>
+            <p className="legend-subtitle">Unleash the Adventure with Our Rental Cars</p>
+          </div>
         </div>
-      </Swiper>
-    </>
+        <div>
+          <img src={img2} alt="Image 2" />
+          <div className="legend-container">
+            <p className="legend-title">Luxury on Wheels</p>
+            <p className="legend-subtitle">Experience Elegance and Style with Our Premium Fleet</p>
+          </div>
+        </div>
+      </Carousel>
+
+    </div>
   );
-}
+};
+
+export default HeroSection;

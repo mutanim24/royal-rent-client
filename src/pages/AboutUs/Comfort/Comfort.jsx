@@ -10,8 +10,8 @@ const Comfort = () => {
             </div>
             <div className='w-full sm:w-1/2 p-10'>
                 <SectionTitle
-                    heading={"We Care About Your Comfort And Safety"}
-                    subheading={"BEST DRIVERS"}
+                    title={"We Care About Your Comfort And Safety"}
+                    subtitle={"BEST DRIVERS"}
                 ></SectionTitle>
                 <p>Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Netus et sed malesuada fames ac turpis. Netus et sed males ada fames ac turpis egesta doi tempus urna. Amet nulla facilisi morbi temp do.</p>
                 <button className='btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>View More</button>
