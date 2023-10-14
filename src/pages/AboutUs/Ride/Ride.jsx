@@ -8,7 +8,7 @@ const Ride = () => {
                     title={"Luxury Limousine for Maximum Satisfaction. Enjoy."}
                     subtitle={"ENJOY THE RIDE"}
                 ></SectionTitle>
-                
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quia?</h2>
         </div>
     );
 };
