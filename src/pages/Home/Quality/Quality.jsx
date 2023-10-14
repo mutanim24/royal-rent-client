@@ -1,6 +1,6 @@
 import React from 'react';
 import symbol from "../../../assets/royal symbol.jpg"
-import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const Quality = () => {
     return (

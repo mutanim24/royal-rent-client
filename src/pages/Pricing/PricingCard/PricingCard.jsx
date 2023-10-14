@@ -7,7 +7,7 @@ import img5 from "../../../assets/client-02-hover.png"
 import img6 from "../../../assets/client-03-hover.png"
 import img7 from "../../../assets/client-04hover.png"
 import img8 from "../../../assets/client-05-hover.png"
-import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 import { BsCheck } from 'react-icons/bs';
 
 
