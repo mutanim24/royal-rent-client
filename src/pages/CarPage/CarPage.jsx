@@ -10,7 +10,7 @@ import Swal from "sweetalert2";
 
 const CarPage = () => {
     const carDetails = useLoaderData();
-    const { _id, brand, model, price_per_hour, rating, description, image } = carDetails;
+    const { _id, brand, model, price_per_hour, rating, description, images } = carDetails;
     // console.log(carDetails)
 
 
@@ -79,28 +79,27 @@ const CarPage = () => {
                 }
             })
     }
-    
+
     return (
         <div>
             <div className="p-20 grid grid-cols-2 gap-10 items-center">
                 <div>
-                    <img className="rounded shadow-lg" src={image} alt="" />
+                    <img className="rounded shadow-lg" src={images[0]} alt="" />
                 </div>
                 <div className="space-y-4">
                     <h1 className="text-5xl font-bold">{brand}</h1>
                     <h3 className="text-2xl font-semibold">{model}</h3>
-                    <div className="flex gap-2">
-                        {/* <ReactStars
-
+                    <div className="flex gap-2 items-center">
+                        <ReactStars
                             value={rating}
                             edit={false}
                             size={24}
                             activeColor="#d28d0d"
                             activeColors={["red", "orange", "#FFCE00", "#9177FF", "#8568FC",]}
-                        /> */}
+                        />
                         <h2>{rating}</h2>
                     </div>
-                    <h1 className="text-2xl">from <span className="text-4xl font-bold text-[#d28d0d]">{price_per_hour}/h</span></h1>
+                    <h1 className="text-2xl">from <span className="text-4xl font-bold text-[#d28d0d]">${price_per_hour}/h</span></h1>
                     <p>{description}</p>
 
                     {/* Modal */}
@@ -157,11 +156,11 @@ const CarPage = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="px-20">
                 <h2 className="text-3xl font-bold text-[#d28d0d] mb-6">Leave your comment</h2>
                 <form onSubmit={handleSubmit} className="bordered w-6/12 space-y-5">
                     <div className="flex items-center gap-3">
-                       
+
                         <ReactStars
                             count={5}
                             size={44}
@@ -173,12 +172,7 @@ const CarPage = () => {
                         />
                     </div>
 
-                    <textarea
-                        className="textarea w-full textarea-bordered"
-                        placeholder="Your Comment*"
-                        name="comment"
-                        required
-                    ></textarea>
+
                     {/* <br /> */}
                     <div className="flex gap-3">
                         <input
@@ -199,6 +193,13 @@ const CarPage = () => {
                         />
                     </div>
                     {/* <br /> */}
+                    <textarea
+                        rows={4}
+                        className="textarea w-full textarea-bordered"
+                        placeholder="Your Comment*"
+                        name="comment"
+                        required
+                    ></textarea>
                     <div className="relative">
                         <select
                             className="input input-bordered w-full"
