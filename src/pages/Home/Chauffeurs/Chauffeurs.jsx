@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 import Chauffeurs1 from "../../../assets/Chauffeurs 1.jpg";
 import Chauffeurs2 from "../../../assets/Chauffeurs 2.jpg";
 import Chauffeurs3 from "../../../assets/Chauffeurs 3.jpg";

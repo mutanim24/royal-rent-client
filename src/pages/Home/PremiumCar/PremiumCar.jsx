@@ -1,7 +1,7 @@
 import React from 'react';
 import premium1 from '../../../assets/premium 1.jpg';
 import premium2 from '../../../assets/premium 2.jpg';
-import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const PremiumCar = () => {
     return (

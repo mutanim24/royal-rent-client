@@ -1,6 +1,6 @@
 import React from 'react';
 import img from "../../../assets/inner-ab-img-3.jpg"
-import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const EveryNeed = () => {
     return (

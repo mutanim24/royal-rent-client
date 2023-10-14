@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const Ride = () => {
     return (
