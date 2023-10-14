@@ -92,7 +92,7 @@ const CarPage = () => {
     // console.log(recentComment)
 
     return (
-        <div>
+        <div className="mb-16">
             {/* single page data */}
             <div className="p-20 grid grid-cols-2 gap-10 items-center">
                 <Carousel>

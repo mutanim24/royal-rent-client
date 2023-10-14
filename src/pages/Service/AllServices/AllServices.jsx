@@ -15,13 +15,13 @@ const AllServices = () => {
     
     return (
         <div>
-            <form className='text-black px-20'>
+            <form className='text-black px-20 pt-20 pb-14'>
                 <input
                     onChange={(e) => setSearchResult(e.target.value)}
                     type="text" placeholder="Search..."
                     className="input input-bordered w-full max-w-xs" />
             </form>
-            <div className='grid grid-cols-3 gap-3 p-20'>
+            <div className='grid grid-cols-3 gap-3 px-20'>
                 {
                     cars.filter(car => searchResult === "" ? car 
                     : car.brand.toLowerCase().includes(searchResult.toLowerCase())).map(car => <CardForCar
