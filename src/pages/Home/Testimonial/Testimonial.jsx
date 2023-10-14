@@ -22,7 +22,7 @@ const Testimonial = () => {
             });
     }, []);
 
-    console.log(filteredComments);
+    // console.log(filteredComments);
 
     return (
         <div className='px-5 md:px-20'>
@@ -57,7 +57,7 @@ const Testimonial = () => {
                 }}
             >
                 {filteredComments.map(comment => (
-                    <SwiperSlide key={comment.id}>
+                    <SwiperSlide key={comment._id}>
                         <div className='p-3 border-l-2 space-y-2 h-72'>
                             <h3 className='text-2xl font-semibold'>{comment.name}</h3>
                             <ReactStars
