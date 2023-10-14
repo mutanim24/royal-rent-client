@@ -12,15 +12,15 @@ const HeroSection = () => {
         <div>
           <img src={img1} alt="Image 1" />
           <div className="legend-container">
-            <p className="legend-title">Explore the Open Road</p>
-            <p className="legend-subtitle">Unleash the Adventure with Our Rental Cars</p>
+            <p className="legend-title text-2xl md:text-6xl">Explore the Open Road</p>
+            <p className="legend-subtitle text-xl md:text-3xl">Unleash the Adventure with Our Rental Cars</p>
           </div>
         </div>
         <div>
           <img src={img2} alt="Image 2" />
           <div className="legend-container">
-            <p className="legend-title">Luxury on Wheels</p>
-            <p className="legend-subtitle">Experience Elegance and Style with Our Premium Fleet</p>
+            <p className="legend-title text-2xl md:text-6xl ">Luxury on Wheels</p>
+            <p className="legend-subtitle text-xl md:text-3xl">Experience Elegance and Style with Our Premium Fleet</p>
           </div>
         </div>
       </Carousel>

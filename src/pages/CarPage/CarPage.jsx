@@ -13,11 +13,10 @@ const CarPage = () => {
     const { _id, brand, model, price_per_hour, rating, description, image } = carDetails;
     // console.log(carDetails)
 
-
-    const [givenRating, setGivenRating] = useState(4); // Initial rating value
+    const [ratings, setRatings] = useState(4); // Initial rating value
 
     const ratingChanged = (newRating) => {
-        setGivenRating(newRating); // Updates the rating state variable with the selected value
+        setRatings(newRating); // Updates the rating state variable with the selected value
     };
 
     const handleSubmit = (event) => {
@@ -27,9 +26,8 @@ const CarPage = () => {
         const name = form.name.value;
         const email = form.email.value;
         const city = form.city.value;
-        const id = _id;
 
-        const allComment = { id, name, email, comment, city, givenRating }
+        const allComment = { name, email, comment, city, ratings }
 
         fetch("http://localhost:3000/comment", {
             method: "POST",
@@ -42,7 +40,7 @@ const CarPage = () => {
 
 
 
-        console.log(comment, name, email, city, givenRating, id)
+        console.log(comment, name, email, city, ratings)
     }
 
     const handleBook = (event) => {
@@ -57,7 +55,7 @@ const CarPage = () => {
         const date = form.date.value;
         const time = form.time.value;
         const special = form.special.value;
-        const booking = { bookingId: _id, name, email, phone, tripType, brand, number, date, time, special };
+        const booking = {  name, email, phone, tripType, brand, number, date, time, special };
         console.log(booking);
         fetch("http://localhost:3000/booking", {
             method: "POST",
