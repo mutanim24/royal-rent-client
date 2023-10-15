@@ -1,31 +1,101 @@
-
 import "./Hero.css"
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 
-import img1 from "../../../assets/h1-rev-img-1b.jpg"
-import img2 from "../../../assets/h1-rev-img-2b.jpg"
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Parallax, Pagination, Navigation } from 'swiper/modules';
+
+
 const HeroSection = () => {
   return (
-    <div>
-      <Carousel>
-        <div>
-          <img src={img1} alt="Image 1" />
-          <div className="legend-container">
-            <p className="legend-title text-2xl md:text-6xl">Explore the Open Road</p>
-            <p className="legend-subtitle text-xl md:text-3xl">Unleash the Adventure with Our Rental Cars</p>
-          </div>
-        </div>
-        <div>
-          <img src={img2} alt="Image 2" />
-          <div className="legend-container">
-            <p className="legend-title text-2xl md:text-6xl ">Luxury on Wheels</p>
-            <p className="legend-subtitle text-xl md:text-3xl">Experience Elegance and Style with Our Premium Fleet</p>
-          </div>
-        </div>
-      </Carousel>
 
-    </div>
+    <Swiper
+      style={{
+        '--swiper-navigation-color': '#fff',
+        '--swiper-pagination-color': '#fff',
+      }}
+      speed={600}
+      parallax={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Parallax, Pagination, Navigation]}
+      className="mySwiper"
+    >
+      <div
+        slot="container-start"
+        className="parallax-bg"
+        style={{
+          'background-image':
+            'url(https://eskipaper.com/images/supercar-4.jpg)',
+        }}
+        data-swiper-parallax="-23%"
+      ></div>
+      <SwiperSlide>
+        <div className="title" data-swiper-parallax="-300">
+          Slide 1
+        </div>
+        <div className="subtitle" data-swiper-parallax="-200">
+          Subtitle
+        </div>
+        <div className="text" data-swiper-parallax="-100">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+          </p>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="title" data-swiper-parallax="-300">
+          Slide 2
+        </div>
+        <div className="subtitle" data-swiper-parallax="-200">
+          Subtitle
+        </div>
+        <div className="text" data-swiper-parallax="-100">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+          </p>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="title" data-swiper-parallax="-300">
+          Slide 3
+        </div>
+        <div className="subtitle" data-swiper-parallax="-200">
+          Subtitle
+        </div>
+        <div className="text" data-swiper-parallax="-100">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+          </p>
+        </div>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 

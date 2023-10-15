@@ -5,7 +5,7 @@ import { AiOutlineClockCircle } from 'react-icons/ai';
 
 const Contact = () => {
     return (
-        <div className='p-5 md:p-10 lg:p-20 grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <div className='p-10 lg:p-20 grid grid-cols-1 md:grid-cols-3 gap-8'>
             <div className='flex gap-4 items-center'>
                 <div className='text-[#d28d0d]'>
                     <FaMapMarkerAlt className='text-2xl md:text-4xl lg:text-4xl'></FaMapMarkerAlt>

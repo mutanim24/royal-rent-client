@@ -24,7 +24,7 @@ const AboutUs = () => {
                    About US
                 </div> */}
             </div>
-            <Ride></Ride>
+            {/* <Ride></Ride> */}
             <Comfort></Comfort>
             <FrequentlyAskedQuestion></FrequentlyAskedQuestion>
             <Gallery></Gallery>
