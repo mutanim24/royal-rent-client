@@ -10,7 +10,7 @@ const PremiumCar = () => {
                 <img className="object-cover w-full" src={premium1} alt="Premium Car 1" />
                 <img className="object-cover w-full" src={premium2} alt="Premium Car 2" />
             </div>
-            <div className='md:mt-16 mt-5'>
+            <div className='md:mt-5 mt-6'>
                 <SectionTitle
                     title="Premium Cars Rental"
                     subtitle="ONLY THE BEST"
