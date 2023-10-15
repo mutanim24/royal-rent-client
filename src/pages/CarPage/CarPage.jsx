@@ -1,12 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
-// import ReactStars from 'react-rating-star-with-type';
 import ReactStars from "react-rating-stars-component";
 
-// import ReactStars from 'react-rating-star-with-type';
 import Swal from "sweetalert2";
 // import { useForm } from 'react-hook-form';
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./CarPage.css"
 import { comment } from "postcss";
 
@@ -59,7 +58,7 @@ const CarPage = () => {
         const date = form.date.value;
         const time = form.time.value;
         const special = form.special.value;
-        const booking = {  name, email, phone, tripType, brand, number, date, time, special };
+        const booking = { name, email, phone, tripType, brand, number, date, time, special };
         console.log(booking);
         fetch("http://localhost:3000/booking", {
             method: "POST",
@@ -119,7 +118,7 @@ const CarPage = () => {
                             features.map((feature, index) => <p key={index} className="border-black border rounded-full text-center p-1 text-sm">{feature}</p>)
                         }
                     </div>
-                    
+
                     {/* Modal */}
                     <label htmlFor="my_modal_7" className="btn btn-outline outline-[#d28d0d] text-[#d28d0d] uppercase">Book Now</label>
                     <input type="checkbox" id="my_modal_7" className="modal-toggle" />
