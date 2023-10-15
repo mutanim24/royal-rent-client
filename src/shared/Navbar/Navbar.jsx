@@ -2,18 +2,26 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { useContext } from "react";
 import "./Navbar.css"
+import { useState } from "react";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     const handleLogOut = () => {
         logOut()
-            .then(() => {
-
-            })
+            .then(() => { })
             .catch((error) => {
                 toast.error(error.message);
             });
+    };
+
+    const handleDrawerOpen = () => {
+        setIsDrawerOpen(true);
+    };
+
+    const handleDrawerClose = () => {
+        setIsDrawerOpen(false);
     };
 
     const menu =
@@ -28,11 +36,11 @@ const Navbar = () => {
                     Service
                 </NavLink>
             </li>
-            <li>
-                <NavLink to="/vehicle" activeClassName="active-link" className="nav-link">
-                    Vehicles
+            {/* <li>
+                <NavLink to="/dashboard" activeClassName="active-link" className="nav-link">
+                    Dashboard
                 </NavLink>
-            </li>
+            </li> */}
             <li>
                 <NavLink to="/blog" activeClassName="active-link" className="nav-link">
                     Blog
@@ -49,7 +57,7 @@ const Navbar = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/pricing" activeClassName="active-link"   className="nav-link">
+                <NavLink to="/pricing" activeClassName="active-link" className="nav-link">
                     Pricing
                 </NavLink>
             </li>
@@ -73,23 +81,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {/* <Link to='/login'>
-                    <a className="btn bg-[#d28d0d] text-white hover:text-[#d28d0d]">Login</a>
-                </Link> */}
-
-                <div>
+                <div className="relative">
                     {user ? (
-                        <div className="flex items-center justify-center gap-6">
-                            <img
-                                title={user.displayName}
-                                className="w-12 h-12 rounded-full"
-                                src={user.photoURL}
-                                alt=""
-                            />
-                            <button
-                                onClick={handleLogOut}
-                                className="btn border-0 text-white bg-[#ff6e13] opacity-75 px-4 py-2 font-bold rounded-md flex items-center gap-1"
-                            >
+                        <div className="flex items-center justify-center gap-6" onClick={handleDrawerOpen}>
+                            <img title={user.displayName} className="w-12 h-12 rounded-full" src={user.photoURL} alt="" />
+                            <button className="btn border-0 text-white bg-[#ff6e13] opacity-75 px-4 py-2 font-bold rounded-md flex items-center gap-1" onClick={handleLogOut}>
                                 Logout
                             </button>
                         </div>
@@ -99,6 +95,29 @@ const Navbar = () => {
                                 Login
                             </button>
                         </Link>
+                    )}
+                    {isDrawerOpen && (
+                        <div className="drawer drawer-end">
+                            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" defaultChecked={isDrawerOpen} />
+                            <div className="drawer-content">
+                                {/* Page content here */}
+                                <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary" onClick={handleDrawerClose}>
+                                    Close drawer
+                                </label>
+                            </div>
+                            <div className="drawer-side z-50">
+                                <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay" onClick={handleDrawerClose}></label>
+                                <ul className="menu p-4 w-80 min-h-full bg-[#d28d0d] text-white">
+                                    {/* Sidebar content here */}
+                                    <li>
+                                        <Link to="/profile">Profile</Link>
+                                    </li>
+                                    <li>
+                                        <a>Sidebar Item 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     )}
                 </div>
             </div>
