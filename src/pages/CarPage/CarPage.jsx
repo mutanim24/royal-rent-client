@@ -1,12 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
-// import ReactStars from 'react-rating-star-with-type';
 import ReactStars from "react-rating-stars-component";
 
-// import ReactStars from 'react-rating-star-with-type';
 import Swal from "sweetalert2";
 // import { useForm } from 'react-hook-form';
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./CarPage.css"
 import { comment } from "postcss";
 
@@ -44,8 +43,6 @@ const CarPage = () => {
         }).then(res => res.json())
             .then(data => console.log(data))
 
-
-
         // console.log(comment, name, email, city, givenRating, id)
     }
     // for booking
@@ -61,7 +58,7 @@ const CarPage = () => {
         const date = form.date.value;
         const time = form.time.value;
         const special = form.special.value;
-        const booking = {  name, email, phone, tripType, brand, number, date, time, special };
+        const booking = { name, email, phone, tripType, brand, number, date, time, special };
         console.log(booking);
         fetch("http://localhost:3000/booking", {
             method: "POST",

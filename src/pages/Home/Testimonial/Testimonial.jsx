@@ -25,7 +25,7 @@ const Testimonial = () => {
     // console.log(filteredComments);
 
     return (
-        <div className='px-5 md:px-20'>
+        <div className='px-10 md:px-20'>
             <SectionTitle
                 title={"What Our Customers Say"}
                 subtitle={"Read the testimonials from some of our satisfied customers."}

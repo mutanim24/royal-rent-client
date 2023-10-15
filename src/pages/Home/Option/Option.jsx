@@ -5,7 +5,7 @@ import { AiFillCheckCircle } from 'react-icons/ai';
 
 const Option = () => {
     return (
-        <div className='p-5 md:p-10 lg:p-20'>
+        <div className='p-10 md:p-10 lg:p-20'>
             <SectionTitle
                 title="A High Variety Of Options"
                 subtitle="BEST POSSIBILITIES"

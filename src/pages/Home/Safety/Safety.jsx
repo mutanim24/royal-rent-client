@@ -5,7 +5,7 @@ import quality2 from '../../../assets/quality 2.jpg';
 
 const Safety = () => {
     return (
-        <div className='md:flex justify-between gap-5 md:gap-10 p-10 md:p-20 items-center flex-col-reverse md:flex-row'>
+        <div className='flex flex-col-reverse md:flex-row justify-between gap-5 md:gap-10 p-10 md:p-20 items-center'>
             <div className="md:pr-10">
                 <SectionTitle
                     title="We Take Care Of Your Safety And Convenience"
