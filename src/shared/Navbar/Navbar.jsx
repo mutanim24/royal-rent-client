@@ -27,37 +27,37 @@ const Navbar = () => {
     const menu =
         <>
             <li>
-                <NavLink to="/" activeClassName="active-link" className="nav-link">
+                <NavLink to="/" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
                     Home
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/services" activeClassName="active-link" className="nav-link">
+                <NavLink to="/services" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
                     Service
                 </NavLink>
             </li>
-            {/* <li>
-                <NavLink to="/dashboard" activeClassName="active-link" className="nav-link">
-                    Dashboard
-                </NavLink>
-            </li> */}
             <li>
-                <NavLink to="/blog" activeClassName="active-link" className="nav-link">
+                <NavLink to="/vehicle" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
+                    Vehicles
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/blog" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
                     Blog
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/contact-us" activeClassName="active-link" className="nav-link">
+                <NavLink to="/contact-us" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
                     Contact
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/aboutUs" activeClassName="active-link" className="nav-link">
+                <NavLink to="/aboutUs" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
                     About Us
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/pricing" activeClassName="active-link" className="nav-link">
+                <NavLink to="/pricing" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
                     Pricing
                 </NavLink>
             </li>

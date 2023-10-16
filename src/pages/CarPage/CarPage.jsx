@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./CarPage.css"
-import { comment } from "postcss";
+// import { comment } from "postcss";
 
 
 
@@ -33,7 +33,7 @@ const CarPage = () => {
         const email = form.email.value;
         const city = form.city.value;
 
-        const allComment = { id, name, email, comment, city, ratings, brand }
+        const allComment = { _id, name, email, comment, city, ratings, brand }
         fetch("http://localhost:3000/comment", {
             method: "POST",
             headers: {
@@ -89,7 +89,7 @@ const CarPage = () => {
     // console.log(recentComment)
 
     return (
-        <div>
+        <div className="mb-16">
             {/* single page data */}
             <div className="p-20 grid grid-cols-2 gap-10 items-center">
                 <Carousel>
@@ -184,7 +184,7 @@ const CarPage = () => {
                     <h2 className="text-3xl font-bold text-black mb-6">Recent Comment</h2>
                     <div className="border-t-2 pt-4 border-black">
                         {
-                            recentComment.slice(0, 3).map(cmt => <div key={comment._id} className="flex  justify-center items-start gap-4 mb-7">
+                            recentComment.slice(0, 3).map(cmt => <div key={cmt._id} className="flex  justify-center items-start gap-4 mb-7">
                                 <div className="w-2/12 h-28  border-2 rounded-full"></div>
                                 <div className="w-10/12 text-black">
                                     <ReactStars

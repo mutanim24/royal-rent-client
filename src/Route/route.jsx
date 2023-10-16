@@ -4,13 +4,13 @@ import {
 import Main from "../layout/Main";
 import HomePage from "../pages/Home/HomePage/HomePage";
 import CarPage from "../pages/CarPage/CarPage";
-import Pricing from "../pages/Pricing/Pricing";
-import AboutUs from "../pages/AboutUs/AboutUs";
 import Blog from "../pages/Blog/Blog";
 import ConatctUs from "../pages/Contact Us/ContactUs";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ServicePage from "../pages/Service/ServicePage/ServicePage";
+import Pricing from "../pages/Pricing/PricingPage/Pricing";
+import AboutUs from "../pages/AboutUs/AboutPage/AboutUs";
 import UserProfile from "../pages/UserDashboard/UserProfile/UserProfile";
 
 
