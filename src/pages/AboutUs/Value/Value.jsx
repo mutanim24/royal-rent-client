@@ -1,12 +1,12 @@
 import React from 'react';
-import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const Value = () => {
     return (
-        <div className='w-11/12 mx-auto my-20'>
+        <div className='p-10 md:p-20'>
             <SectionTitle
-                heading={"We Value Our Clients And Want Them To Have A Nice Experience"}
-                subheading={"FINEST TRANSPORT"}
+                title={"We Value Our Clients And Want Them To Have A Nice Experience"}
+                subtitle={"FINEST TRANSPORT"}
             ></SectionTitle>
             <div className='w-full sm:w-4/6 mx-auto'>
                 <div className='flex flex-col sm:flex-row justify-between gap-8'>

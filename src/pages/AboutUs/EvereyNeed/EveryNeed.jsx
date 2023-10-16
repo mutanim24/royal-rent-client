@@ -1,14 +1,14 @@
 import React from 'react';
 import img from "../../../assets/inner-ab-img-3.jpg"
-import SectionTitle from '../../../components/CardForCar/SectionTitle/SectionTitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const EveryNeed = () => {
     return (
-        <div className='flex flex-col-reverse sm:flex-row justify-between gap-10 w-full mt-20'>
-            <div className='w-full sm:w-1/2 p-10'>
+        <div className='flex flex-col-reverse sm:flex-row justify-between gap-10 w-full p-10 md:p-20'>
+            <div className='w-full sm:w-1/2 p-0 md:p-10'>
                 <SectionTitle
-                    heading={"For Your Every Need"}
-                    subheading={"ONLY THE BEST"}
+                    title={"For Your Every Need"}
+                    subtitle={"ONLY THE BEST"}
                 ></SectionTitle>
                 <p>Praesent elementum facilisis leo vel fringilla est. Vestibulum lectus a urise ultrices eros in cursus.</p>
                 <button className='btn btn-outline outline-[#d28d0d] text-[#d28d0d] mt-10 uppercase'>View More</button>
