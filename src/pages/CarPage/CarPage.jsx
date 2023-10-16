@@ -34,7 +34,7 @@ const CarPage = () => {
         const city = form.city.value;
 
         const allComment = { _id, name, email, comment, city, ratings, brand }
-        fetch("http://localhost:3000/comment", {
+        fetch("https://royal-rent-server.vercel.app/comment", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -60,7 +60,7 @@ const CarPage = () => {
         const special = form.special.value;
         const booking = { name, email, phone, tripType, brand, number, date, time, special };
         console.log(booking);
-        fetch("http://localhost:3000/booking", {
+        fetch("https://royal-rent-server.vercel.app/booking", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -82,7 +82,7 @@ const CarPage = () => {
     }
 
     useEffect(() => {
-        fetch("http://localhost:3000/comment")
+        fetch("https://royal-rent-server.vercel.app/comment")
             .then(res => res.json())
             .then(data => setRecentComment(data))
     }, [])

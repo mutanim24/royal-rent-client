@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
             {
                 path: '/car/:id',
                 element: <CarPage></CarPage>,
-                loader: ({ params }) => fetch(`http://localhost:3000/car/${params.id}`)
+                loader: ({ params }) => fetch(`https://royal-rent-server.vercel.app/car/${params.id}`)
             },
             {
                 path: '/blog',

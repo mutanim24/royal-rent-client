@@ -14,7 +14,7 @@ const Testimonial = () => {
     const [filteredComments, setFilteredComments] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/comment')
+        fetch('https://royal-rent-server.vercel.app/comment')
             .then(res => res.json())
             .then(data => {
                 setComments(data);
