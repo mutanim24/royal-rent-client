@@ -5,7 +5,7 @@ import CardForCar from '../../../components/CardForCar/CardForCar';
 const AllServices = () => {
     const [cars, setCars] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/cars')
+        fetch('https://royal-rent-server.vercel.app/cars')
             .then(res => res.json())
             .then(data => setCars(data))
     }, []);
