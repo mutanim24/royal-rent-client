@@ -11,6 +11,7 @@ import Register from "../pages/Register/Register";
 import ServicePage from "../pages/Service/ServicePage/ServicePage";
 import Pricing from "../pages/Pricing/PricingPage/Pricing";
 import AboutUs from "../pages/AboutUs/AboutPage/AboutUs";
+import UserProfile from "../pages/UserDashboard/UserProfile/UserProfile";
 
 
 export const router = createBrowserRouter([
@@ -25,7 +26,7 @@ export const router = createBrowserRouter([
             {
                 path: '/car/:id',
                 element: <CarPage></CarPage>,
-                loader: ({params}) => fetch(`http://localhost:3000/car/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:3000/car/${params.id}`)
             },
             {
                 path: '/blog',
@@ -54,7 +55,21 @@ export const router = createBrowserRouter([
             {
                 path: 'services',
                 element: <ServicePage></ServicePage>
+            },
+            {
+                path: "/profile",
+                element: <UserProfile></UserProfile>
             }
         ]
     },
+    // {
+    //     path:"/dashboard",
+    //     element:<Dashboard></Dashboard>,
+    //     children:[
+    //         {
+    //             path:"/dashboard/userProfile",
+    //             element:<UserProfile></UserProfile>
+    //         }
+    //     ]
+    // }
 ]);
