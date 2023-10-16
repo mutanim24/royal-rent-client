@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogNews from './BlogNews';
 import ContactBottom from '../Contact Us/ContactBottom';
+import PageBanner from '../../components/PageBanner/PageBanner';
 
 const blogNewsData = [
     {
@@ -29,19 +30,12 @@ const blogNewsData = [
 const Blog = () => {
     return (
         <>
-            <section className="pt-20 lg:pt-10 pb-10 lg:pb-20 bg-[#F7F9FA]">
+            <section className=" pb-10 lg:pb-20 bg-[#F7F9FA]">
                 <div className="w-full max-w-screen-xl mx-auto">
                     <div className="gird grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <div className="w-full px-4">
-                            <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-                                <h2 className='text-4xl py-5 font font-semibold '>Our Blogs</h2>
-                                <p className="text-base text-body-color">
-                                Explore the World of Luxury Cars: Tips, Trends, and Experiences
-                                </p>
-                            </div>
-                        </div>
+                        <PageBanner bannerTitle="Blog"></PageBanner>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-5 mx-4">
+                    <div className="grid md:grid-cols-3 gap-5 m-9">
                         {blogNewsData.map(news => (
                             <BlogNews key={news.id} news={news} />
                         ))}
