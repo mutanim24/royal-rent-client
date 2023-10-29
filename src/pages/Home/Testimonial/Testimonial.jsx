@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import "./Testimonial.css"
+// import "./Testimonial.css"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
