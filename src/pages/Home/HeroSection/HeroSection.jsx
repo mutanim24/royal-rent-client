@@ -1,113 +1,84 @@
-// import "./Hero.css"
-
-// import { Swiper, SwiperSlide } from 'swiper/react';
-
-// // Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-
-
-// // import required modules
-// import { Parallax, Pagination, Navigation } from 'swiper/modules';
-
-
-// const HeroSection = () => {
-//   return (
-
-//     <Swiper
-//       style={{
-//         '--swiper-navigation-color': '#fff',
-//         '--swiper-pagination-color': '#fff',
-//       }}
-//       speed={600}
-//       parallax={true}
-//       pagination={{
-//         clickable: true,
-//       }}
-//       navigation={true}
-//       modules={[Parallax, Pagination, Navigation]}
-//       className="mySwiper"
-//     >
-//       <div
-//         slot="container-start"
-//         className="parallax-bg"
-//         style={{
-//           'background-image':
-//             'url(https://eskipaper.com/images/supercar-4.jpg)',
-//         }}
-//         data-swiper-parallax="-23%"
-//       ></div>
-//       <SwiperSlide>
-//         <div className="title" data-swiper-parallax="-300">
-//           Slide 1
-//         </div>
-//         <div className="subtitle" data-swiper-parallax="-200">
-//           Subtitle
-//         </div>
-//         <div className="text" data-swiper-parallax="-100">
-//           <p>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-//             dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-//             laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-//             Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-//             Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-//             ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-//             tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-//           </p>
-//         </div>
-//       </SwiperSlide>
-//       <SwiperSlide>
-//         <div className="title" data-swiper-parallax="-300">
-//           Slide 2
-//         </div>
-//         <div className="subtitle" data-swiper-parallax="-200">
-//           Subtitle
-//         </div>
-//         <div className="text" data-swiper-parallax="-100">
-//           <p>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-//             dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-//             laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-//             Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-//             Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-//             ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-//             tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-//           </p>
-//         </div>
-//       </SwiperSlide>
-//       <SwiperSlide>
-//         <div className="title" data-swiper-parallax="-300">
-//           Slide 3
-//         </div>
-//         <div className="subtitle" data-swiper-parallax="-200">
-//           Subtitle
-//         </div>
-//         <div className="text" data-swiper-parallax="-100">
-//           <p>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-//             dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-//             laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-//             Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-//             Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-//             ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-//             tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-//           </p>
-//         </div>
-//       </SwiperSlide>
-//     </Swiper>
-//   );
-// };
-
-// export default HeroSection;
+import banner from '../../../assets/main-banner.jpg'
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './HeroSection.css';
+import { Parallax, Pagination, Navigation } from 'swiper/modules';
 
 const HeroSection = () => {
-  return (
-    <div>
-      <h2></h2>
-    </div>
-  );
+    return (
+        <div className='h-[500px] md:h-[600px] relative'>
+            {/* <div className='absolute bg-black w-full h-[500px] z-10 opacity-50'></div> */}
+            <Swiper
+
+                style={{
+                    '--swiper-navigation-color': '#fff',
+                    '--swiper-pagination-color': '#fff',
+                }}
+                speed={600}
+                parallax={true}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Parallax, Pagination, Navigation]}
+                className="mySwiper"
+            >
+                <div
+                    slot="container-start"
+                    className="parallax-bg"
+                    style={{
+                        'backgroundImage':
+                            `url(${banner})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center"
+                    }}
+                    data-swiper-parallax="-23%"
+                ></div>
+                <SwiperSlide className=''>
+                    <div className="title mt-12 md:mt-36" data-swiper-parallax="-300">
+                        <h1 className='text-3xl md:text-5xl font-bold'> Speak the Language of Success</h1>
+                    </div>
+                    <div className="subtitle" data-swiper-parallax="-200">
+                        <h3 className='text-xl md:text-2xl font-semibold my-4'>Your Gateway to Multilingual Excellence</h3>
+                    </div>
+                    <div className="text" data-swiper-parallax="-100">
+                        <p>
+                            Join WorldSpeak and become a confident communicator. Our immersive courses are designed to empower you in every conversation, business meeting, and adventure abroad. Start speaking success!
+                        </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="title mt-12 md:mt-36" data-swiper-parallax="-300">
+                        <h1 className='text-3xl md:text-5xl font-bold'> Discover the Magic of Multilingualism</h1>
+                    </div>
+                    <div className="subtitle" data-swiper-parallax="-200">
+                        <h3 className='text-xl md:text-2xl font-semibold my-4'>Where Every Word Sparks a Connection</h3>
+                    </div>
+                    <div className="text" data-swiper-parallax="-100">
+                        <p>
+                            WorldSpeak is your passport to a world united by language. Dive into our engaging courses and watch as your ability to connect, understand, and grow flourishes. Embrace the magic of speaking in many tongues!
+                        </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="title mt-12 md:mt-36" data-swiper-parallax="-300">
+                        <h1 className='text-3xl md:text-5xl font-bold'> Unlock a World of Opportunities</h1>
+                    </div>
+                    <div className="subtitle" data-swiper-parallax="-200">
+                        <h3 className='text-xl md:text-2xl font-semibold my-4'>Learn Languages with WorldSpeak</h3>
+                    </div>
+                    <div className="text" data-swiper-parallax="-100">
+                        <p>
+                            Embark on a journey of language mastery with WorldSpeak. Elevate your global communication skills and open doors to endless possibilities. Start your adventure today!
+                        </p>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+        </div>
+    );
 };
 
 export default HeroSection;
