@@ -9,7 +9,7 @@ import { Parallax, Pagination, Navigation } from 'swiper/modules';
 
 const HeroSection = () => {
     return (
-        <div className='h-[500px] relative'>
+        <div className='h-[500px] md:h-[600px] relative'>
             {/* <div className='absolute bg-black w-full h-[500px] z-10 opacity-50'></div> */}
             <Swiper
 
@@ -38,7 +38,7 @@ const HeroSection = () => {
                     data-swiper-parallax="-23%"
                 ></div>
                 <SwiperSlide className=''>
-                    <div className="title mt-12 md:mt-28" data-swiper-parallax="-300">
+                    <div className="title mt-12 md:mt-36" data-swiper-parallax="-300">
                         <h1 className='text-3xl md:text-5xl font-bold'> Speak the Language of Success</h1>
                     </div>
                     <div className="subtitle" data-swiper-parallax="-200">
@@ -51,7 +51,7 @@ const HeroSection = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="title mt-12 md:mt-28" data-swiper-parallax="-300">
+                    <div className="title mt-12 md:mt-36" data-swiper-parallax="-300">
                         <h1 className='text-3xl md:text-5xl font-bold'> Discover the Magic of Multilingualism</h1>
                     </div>
                     <div className="subtitle" data-swiper-parallax="-200">
@@ -64,7 +64,7 @@ const HeroSection = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="title mt-12 md:mt-28" data-swiper-parallax="-300">
+                    <div className="title mt-12 md:mt-36" data-swiper-parallax="-300">
                         <h1 className='text-3xl md:text-5xl font-bold'> Unlock a World of Opportunities</h1>
                     </div>
                     <div className="subtitle" data-swiper-parallax="-200">
