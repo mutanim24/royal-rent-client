@@ -14,7 +14,6 @@ const AboutUs = () => {
 
            <PageBanner bannerTitle="about us"></PageBanner>
             <Value></Value>
-
             <div className="bg-cover bg-center h-64 md:h-96" style={{ backgroundImage: `url(${bannerImage})` }}>
                 
             </div>

@@ -9,7 +9,7 @@ const About = () => {
             <div className="text-center md:text-left">
                 <p>Vivamus arcu felis bibendum ut tristique et egestas. Ultricies leo intege in malesuada nunc vel risus commodo. Sapien nec sagittis aliquam male bibendum arcu vitae. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Fringilla est ullamcorper eget nulla facilisi nul.</p>
                 <div className='text-gold flex gap-4 items-center justify-center md:justify-start mt-5'>
-                    <BsHeadset className='text-gold text-3xl text-[#d28d0d]'></BsHeadset><span className='text-xl md:text-2xl'>call: +8801746404687</span>
+                    <BsHeadset className='text-gold text-3xl text-[#d28d0d]'></BsHeadset><span className='text-xl md:text-2xl'>call: +012345678</span>
                 </div>
             </div>
         </div>
