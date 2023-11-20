@@ -210,7 +210,7 @@ const CarPage = () => {
                                 count={5}
                                 size={44}
                                 activeColor="#d28d0d"
-                                value={4}
+                                value={5}
                                 edit={true}
                                 onChange={ratingChanged}
                                 required
