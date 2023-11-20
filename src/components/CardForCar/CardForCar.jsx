@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+// CardForCar.js
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CardForCar = ({ car }) => {
-    const {_id, images, brand, price_per_hour, model, description} = car;
-    // console.log(car.images[0])
+    const { _id, images, brand, price_per_hour, model } = car;
+
     return (
-        <Link to={`car/${_id}`} className="group relative shadow-lg overflow-hidden">
+        <Link to={`/car/${_id}`} className="group relative shadow-lg overflow-hidden">
             {/* Image */}
             <img src={images[0]} alt="" className="w-full h-72" />
 
@@ -14,11 +16,9 @@ const CardForCar = ({ car }) => {
                     <h2 className="text-3xl font-bold mb-3">{brand}</h2>
                     <h2 className="text-xl font-semibold text-[#d28d0d]">{model}</h2>
                     <p className="my-3 text-base font-thin">
-                        from 
+                        from
                         <span className="text-3xl text-[#d28d0d]"> ${price_per_hour}/h</span>
-                        
                     </p>
-                    {/* <p>{description}</p> */}
                 </div>
             </div>
         </Link>

@@ -37,11 +37,6 @@ const Navbar = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/vehicle" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
-                    Vehicles
-                </NavLink>
-            </li>
-            <li>
                 <NavLink to="/blog" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
                     Blog
                 </NavLink>

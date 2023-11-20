@@ -1,12 +1,12 @@
 import React from 'react';
 import AllServices from '../AllServices/AllServices';
-import Banner from '../Banner/Banner';
 import PremiumCar from '../PremiumCar/PremiumCar';
 import BestCar from '../BestCar/BestCar';
 import Contact from '../../Home/Contact/Contact';
 import PageBanner from '../../../components/PageBanner/PageBanner';
 
 const ServicePage = () => {
+    
     return (
         <div  className="bg-[#1f2937] text-white">
             <PageBanner
