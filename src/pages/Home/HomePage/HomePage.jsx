@@ -19,10 +19,10 @@ const HomePage = () => {
            <Quality></Quality>  
            <Safety></Safety>
            <Offer></Offer>
-           <Chauffeurs></Chauffeurs>
-           <PremiumCar></PremiumCar>
-           <Testimonial></Testimonial>
            <Option></Option>
+           <PremiumCar></PremiumCar>
+           <Chauffeurs></Chauffeurs>
+           <Testimonial></Testimonial>
            <Contact></Contact>
         </div>
     );

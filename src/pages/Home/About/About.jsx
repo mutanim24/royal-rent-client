@@ -1,7 +1,9 @@
 import { BsHeadset } from 'react-icons/bs';
 
 const About = () => {
+           
     return (
+        
         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 px-5 md:px-20 py-10 md:py-20'>
             <div className="text-center md:text-left">
                 <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#d28d0d]'>What We Provide Is The Luxury Transport And Most Comfortable Experience</h1>
