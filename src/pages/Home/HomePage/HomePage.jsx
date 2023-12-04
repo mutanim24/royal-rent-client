@@ -2,6 +2,7 @@ import About from "../About/About";
 import Chauffeurs from "../Chauffeurs/Chauffeurs";
 import Contact from "../Contact/Contact";
 import HeroSection from "../HeroSection/HeroSection";
+import Newslatter from "../Newslatter/Newslatter";
 import Offer from "../Offer/Offer";
 import Option from "../Option/Option";
 import PremiumCar from "../PremiumCar/PremiumCar";
@@ -24,6 +25,7 @@ const HomePage = () => {
            <Chauffeurs></Chauffeurs>
            <Testimonial></Testimonial>
            <Contact></Contact>
+           <Newslatter></Newslatter>
         </div>
     );
 };
