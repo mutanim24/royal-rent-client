@@ -12,6 +12,7 @@ import ServicePage from "../pages/Service/ServicePage/ServicePage";
 import Pricing from "../pages/Pricing/PricingPage/Pricing";
 import AboutUs from "../pages/AboutUs/AboutPage/AboutUs";
 import UserProfile from "../pages/UserDashboard/UserProfile/UserProfile";
+import Dashboard from "../layout/Dashboard";
 
 
 export const router = createBrowserRouter([
@@ -62,14 +63,11 @@ export const router = createBrowserRouter([
             }
         ]
     },
-    // {
-    //     path:"/dashboard",
-    //     element:<Dashboard></Dashboard>,
-    //     children:[
-    //         {
-    //             path:"/dashboard/userProfile",
-    //             element:<UserProfile></UserProfile>
-    //         }
-    //     ]
-    // }
+    {
+        path:"/dashboard",
+        element:<Dashboard></Dashboard>,
+        children:[
+            
+        ]
+    }
 ]);

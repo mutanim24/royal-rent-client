@@ -61,6 +61,14 @@ const Navbar = () => {
                     Pricing
                 </NavLink>
             </li>
+            {
+                user ? <li>
+                    <NavLink to="/dashboard" className={({ isActive }) => isActive ? "text-white border-b border-white rounded-none" : ""}>
+                        Dashboard
+                    </NavLink>
+                </li> : " "
+            }
+
         </>
     return (
         <div className="navbar text-[#d28d0d] border-b px-20 bg-[#1f2937]">

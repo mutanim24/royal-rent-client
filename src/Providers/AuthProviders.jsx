@@ -12,38 +12,31 @@ const googleProvider = new GoogleAuthProvider()
 const auth = getAuth(app)
 
 const AuthProviders = ({ children }) => {
+    const auth = getAuth(app)
+    const googleProvider = new GoogleAuthProvider()
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
 
-
-    const createUser = (email, password, displayName, photoUrl) => {
-        setLoading(true)
-        return createUserWithEmailAndPassword(auth, email, password).then(
-            (userCredential) => {
-                // Set display name and photo URL
-                return updateProfile(userCredential.user, {
-                    displayName,
-                    photoUrl,
-                }).then(() => {
-                    return userCredential;
-                });
-            }
-        );
-    }
-    // sing in user
-    const singIn = (email, password) => {
+    const createUser = (email, password) => {
         setLoading(true);
-        return signInWithEmailAndPassword(auth, email, password);
-    };
-
-    const googleSignIn = () => {
-        setLoading(true)
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
+    const signInWithGoogle = () => {
+        setLoading(true);
         return signInWithPopup(auth, googleProvider)
+    }
+    const signIn = (email, password) => {
+        setLoading(true)
+        return signInWithEmailAndPassword(auth, email, password)
+    }
+    const updateUserProfile = (name, photo) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: photo
+        })
     }
     const logOut = () => {
         return signOut(auth)
     }
-
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, loggedUser => {
             // console.log("logged User", loggedUser)
@@ -58,8 +51,9 @@ const AuthProviders = ({ children }) => {
         user,
         loading,
         createUser,
-        singIn,
-        googleSignIn,
+        signIn,
+        updateUserProfile,
+        signInWithGoogle,
         logOut,
     };
     return (
