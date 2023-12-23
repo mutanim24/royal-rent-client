@@ -1,7 +1,7 @@
 import React from 'react';
-import BlogNews from './BlogNews';
-import ContactBottom from '../Contact Us/ContactBottom';
+import BlogNews from './BlogNews/BlogNews';
 import PageBanner from '../../components/PageBanner/PageBanner';
+import Contact from '../Home/Contact/Contact';
 
 const blogNewsData = [
     {
@@ -30,8 +30,8 @@ const blogNewsData = [
 const Blog = () => {
     return (
         <>
-            <section className=" pb-10 lg:pb-20 bg-[#F7F9FA]">
-                <div className="w-full max-w-screen-xl mx-auto">
+            <section className=" pb-10 lg:pb-20 bg-[#0c1315]">
+                <div className="w-full mx-auto">
                     <div className="gird grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <PageBanner bannerTitle="Blog"></PageBanner>
                     </div>
@@ -43,7 +43,7 @@ const Blog = () => {
                 </div>
             </section>
             <div className='bg-[#0c1315] w-full'>
-                <ContactBottom></ContactBottom>
+                <Contact />
             </div>
         </>
     );

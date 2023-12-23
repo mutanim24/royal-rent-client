@@ -1,9 +1,9 @@
 import React from 'react';
-import CardItems from './CardItems';
-import ContactMaps from './ContactMaps';
-import BookNow from './BookNow';
-import ContactBottom from './ContactBottom';
+import CardItems from './CardItems/CardItems';
+import ContactMaps from './ContactMaps/ContactMaps';
 import PageBanner from '../../components/PageBanner/PageBanner';
+import BookNow from './BookNow/BookNow';
+import Contact from '../Home/Contact/Contact';
 
 const ConatctUs = () => {
   return (
@@ -20,7 +20,7 @@ const ConatctUs = () => {
         <ContactMaps />
       </section>
       <BookNow />
-      <ContactBottom />
+      <Contact />
     </div>
 
   );
